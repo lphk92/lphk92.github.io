@@ -15,33 +15,58 @@
                 text-align: center;
                 margin: 5% auto 5% auto;
             }
-            article
+            div#center
             {
-                margin: 0px auto;
-                width: 1000px;
+                width: 70%;
+                min-width: 500px;
+                margin: 0 auto;
             }
-            article section
+            div#accordion
             {
                 float: left;
-                width: 300px;
-                background-color: black;
-                opacity: 0.8;
-                padding: 0px 10px;
-                margin: 0px 5px;
+                background: green;
+                border: 2px solid white;
+                padding: 10px;
+                width: 600px;
+                z-index: 1;
             }
-            article section > h2
+            nav
             {
-                text-align: center;
+                position: relative;
+                float: left;
+                padding: 0px;
+                margin: 0;
+                z-index: 2;
             }
-            article section:hover > div.content
+            nav ul
             {
-                visibility: visible;
-                height: auto;
+                list-style-type: none;
+                font-size: 25px;
+                font-weight: bold;
+                margin: 0;
+                padding: 0px;
+                width: 200px;
             }
-            div.content
+            nav ul li
             {
-                visibility: hidden;
-                height: 0px;
+                float: left;
+                clear: both;
+                padding: 10px 0px;
+                width: 190px;
+                padding-left: 10px;
+            }
+            nav ul li:hover
+            {
+                border-left: 2px solid white;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                border-right: 2px solid green;
+                padding-left: 8px;
+                background-color: green;
+            }
+            .hidden
+            {
+                display: none;
             }
         </style>
     </head>
@@ -50,31 +75,51 @@
         <header>
             <h1>Lucas Kushner</h1>
         </header>
-        <article>
-            <section id ="coder">
-                <h2>Coder</h2>
-                <div class="content">
+        <div id="center">
+            <nav>
+                <ul>
+                    <li id="coder-li" data-id="coder">Coder</li>
+                    <li id="teacher-li" data-id="teacher">Teacher</li>
+                    <li id="performer-li" data-id="performer">Performer</li>
+                </ul>
+            </nav>
+            <div id="accordion">
+                <div class="content" id="coder">
                     <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
                     </p>
                 </div>
-            </section>
-            <section id ="teacher">
-                <h2>Teacher</h2>
-                <div class="content">
+                <div class="content hidden" id="teacher">
                     <p>
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit.
+        Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit.
                     </p>
                 </div>
-            </section>
-            <section id ="performer">
-                <h2>Performer</h2>
-                <div class="content">
+                <div class="content hidden" id="performer">
                     <p>
-Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci.
+        Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci.
                     </p>
                 </div>
-            </section>
-        </article>
+            </div>
+        </div>
     </body>
+    <script>
+        document.getElementById("coder-li").onclick = function()
+        {
+            document.getElementById("coder").classList.remove("hidden");
+            document.getElementById("teacher").classList.add("hidden");
+            document.getElementById("performer").classList.add("hidden");
+        }
+        document.getElementById("teacher-li").onclick = function()
+        {
+            document.getElementById("coder").classList.add("hidden");
+            document.getElementById("teacher").classList.remove("hidden");
+            document.getElementById("performer").classList.add("hidden");
+        }
+        document.getElementById("performer-li").onclick = function()
+        {
+            document.getElementById("coder").classList.add("hidden");
+            document.getElementById("teacher").classList.add("hidden");
+            document.getElementById("performer").classList.remove("hidden");
+        }
+    </script>
 </html>
