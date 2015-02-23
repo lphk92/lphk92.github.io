@@ -2,124 +2,90 @@
 <html>
     <head>
         <title>Lucas Penn Hardy Kushner</title>
-        <style>
-            body
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
             {
-                color: white;
-                font-family: Helvetica;
-                background: url('code.png');
-            }
-            header h1
-            {
-                font-size: 42px;
-                text-align: center;
-                margin: 5% auto 5% auto;
-            }
-            div#center
-            {
-                width: 70%;
-                min-width: 500px;
-                margin: 0 auto;
-            }
-            div#accordion
-            {
-                float: left;
-                background: green;
-                border: 2px solid white;
-                padding: 10px;
-                width: 600px;
-                z-index: 1;
-            }
-            nav
-            {
-                position: relative;
-                float: left;
-                padding: 0px;
-                margin: 0;
-                z-index: 2;
-            }
-            nav ul
-            {
-                list-style-type: none;
-                font-size: 25px;
-                font-weight: bold;
-                margin: 0;
-                padding: 0px;
-                width: 200px;
-            }
-            nav ul li
-            {
-                float: left;
-                clear: both;
-                padding: 10px 0px;
-                width: 190px;
-                padding-left: 10px;
-            }
-            nav ul li:hover
-            {
-                border-left: 2px solid white;
-                border-top: 2px solid white;
-                border-bottom: 2px solid white;
-                border-right: 2px solid green;
-                padding-left: 8px;
-                background-color: green;
-            }
-            .hidden
-            {
-                display: none;
-            }
-        </style>
+                // Smooth scrolling
+                $('a[href*=#]:not([href=#])').click(function() 
+                {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+                    {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length)
+                        {
+                            $('html,body').animate({ scrollTop: target.offset().top - 60 }, 1000);
+                            return false;
+                        }
+                    }
+                });
+
+                $('div.examples img').mouseenter(function()
+                {
+                    $(this).animate({height: "300px", width: "300px", padding: "0px"}, 200, "linear");
+                });
+
+                $('div.examples img').mouseleave(function()
+                {
+                    $(this).animate({height: "280px", width: "280px", padding: "10px"}, 200, "linear");
+                });
+            });
+        </script>
     </head>
 
     <body>
         <header>
             <h1>Lucas Kushner</h1>
-        </header>
-        <div id="center">
             <nav>
                 <ul>
-                    <li id="coder-li" data-id="coder">Coder</li>
-                    <li id="teacher-li" data-id="teacher">Teacher</li>
-                    <li id="performer-li" data-id="performer">Performer</li>
+                    <a href="#dreams"><li>Home</li></a>
+                    <a href="#code"><li>Portfolio</li></a>
+                    <a href="#want"><li>Teaching</li></a>
+                    <li>Quote</li>
                 </ul>
             </nav>
+        </header>
+        <section id="dreams">
+            <h1>Where Dreams Come Alive</h1>
+            <p>
+            I believe the software is more than 1s and 0s. I believe that it is an artform, that the computer is an infinite canvas, where the only limit is your imagination. I'm here to help transform your vision onto the canvas.
+            </p>
+        </section>
+
+        <section id="code">
+            <hgroup>
+                <h1>I can code.</h1>
+                <h2>So you don't have to</h2>
+            </hgroup>
+        </section>
+
+        <section id="portfolio">
+            <div class="examples">
+                <a href="http://www.hardyink.com"><img src="img/hardyink.png"></a>
+                <a href="http://lphk92.github.io/FallsWebsite"><img src="img/falls.png"></a>
+                <img src="img/hardyink.png">
+            </div>
+        </section>
+
+        <section id="want">
+            <hgroup>
+                <h1>...but if you want to</h1>
+                <h2>I can help</h2>
+            <hgroup>
+        </section>
+        <section id="teaching">
+            <p>
+            My greatest passion has always been in sharing my love for programming and software development, and enabling others to bring their own ideas and imagination to life on the screen.
+            </p>
+            <p>
+            From middle school classrooms to aspiring self-starters, I can assist whomever you think needs to learn how to code!
+            </p>
+        </section>
+        <div id="center">
             <div id="accordion">
-                <div class="content" id="coder">
-                    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
-                    </p>
-                </div>
-                <div class="content hidden" id="teacher">
-                    <p>
-        Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit.
-                    </p>
-                </div>
-                <div class="content hidden" id="performer">
-                    <p>
-        Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci.
-                    </p>
-                </div>
             </div>
         </div>
     </body>
-    <script>
-        document.getElementById("coder-li").onclick = function()
-        {
-            document.getElementById("coder").classList.remove("hidden");
-            document.getElementById("teacher").classList.add("hidden");
-            document.getElementById("performer").classList.add("hidden");
-        }
-        document.getElementById("teacher-li").onclick = function()
-        {
-            document.getElementById("coder").classList.add("hidden");
-            document.getElementById("teacher").classList.remove("hidden");
-            document.getElementById("performer").classList.add("hidden");
-        }
-        document.getElementById("performer-li").onclick = function()
-        {
-            document.getElementById("coder").classList.add("hidden");
-            document.getElementById("teacher").classList.add("hidden");
-            document.getElementById("performer").classList.remove("hidden");
-        }
-    </script>
 </html>
