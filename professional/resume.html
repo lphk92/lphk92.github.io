@@ -10,16 +10,60 @@
             height: 10.5in;
             border: 1px dotted black;
             margin: auto;
+            font-size: 14px;
+        }
+        section
+        {
+            margin: 20px 0px;
+        }
+        h1
+        {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            font-variant: small-caps;
+        }
+        h2
+        {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-variant: small-caps;
+        }
+        div.item
+        {
+            margin-bottom: 15px;
+        }
+        ul
+        {
+            margin: 0px;
+            list-style-type: none;
+        }
+        span.title
+        {
+            font-size: 16px;
+            font-variant: small-caps;
+        }
+        span.date
+        {
+            float: right;
+        }
+        tr
+        {
+            height: 20px;
+        }
+        td
+        {
+            padding-right: 10px;
         }
         </style>
     </head>
     <body>
-        <div id="heading">
-        <h2>Lucas Kushner</h2>
-        505 W Belmont Unit 5K, Chicago IL 60657<br>
-        269.364.8095 • lphk92@gmail.com<br>
-        GitHub: <a href="http://www.github.com/lphk92">http://www.github.com/lphk92</a>
-        </div>
+        <header>
+            <h1>Lucas Kushner</h1>
+            505 W Belmont Unit 5K, Chicago IL 60657<br>
+            269.364.8095 • lphk92@gmail.com<br>
+        </header>
 
         <!--<section id="profile">
             <h1>Profile</h1>
@@ -28,25 +72,25 @@
 
         <section id="education">
             <h1>Education</h1>
-            Kalamazoo College, Kalamazoo, MI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bachelor of Arts <span class="date">June 2014</span> <br>
-            Areas of Study: Computer Science and Physics Majors<br>
-            3.98 / 4.0 GPA <br>
-            <br>
-            Kalamazoo College Heyl Scholar – Full Scholarship for excellence in Mathematics and Science <span class="date">2010 – 2014</span>
-            <br>
+            Kalamazoo College, Kalamazoo, MI<br>
+            Bachelor of Arts in Computer Science and Physics <span class="date">June 2014</span> <br>
             1 Year study abroad at the 国際教養学部,  Waseda University, Tokyo, Japan <span class="date">September 2012 - July 2013</span>
+            <h2>Honors</h2>
+            Summa Cum Laude<br>
+            Phi Beta Kappa - Academic Honor Society for the Liberal Arts and Sciences<br>
+            Kalamazoo College Heyl Scholar – Full Scholarship for excellence in Mathematics and Science <span class="date">2010 – 2014</span> <br>
         </section>
 
         <section id="experience">
             <h1>Experience</h1>
-            <div class="job">
+            <div class="item">
                 <span class="title">Associate Software Engineer</span> - Chicago Trading Company, Chicago IL <span class="date">July 2014 - Present</span>
                 <ul>
                     <li>Did some cool stuff</li>
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="item">
                 <span class="title">Teaching Assistant</span> - Kalamazoo College, Kalamazoo MI <span class="date">September 2011 - June 2014</span>
                 <ul>
                     <li>Guide students through assignments and laboratory exercises to develop understanding of concepts and applications of course material in both Computer Science and Physics</li>
@@ -54,42 +98,42 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="item">
                 <span class="title">Software Engineering Intern</span> - Chicago Trading Company, Chicago IL <span class="date">June 2012 - August 2012</span>
                 <ul>
                     <li>Produced tools used for numerical analysis of stock options data alongside the Firmwide Valuation team.</li>
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="item">
                 <span class="title">Software Developer</span> - iyeTek, Kalamazoo MI <span class="date">August 2009 – April 2012 </span>
                 <ul>
                     <li>Develop front-end software solutions using Microsoft Visual C#; communicate with third parties to custom-tailor products</li>
                 </ul>
             </div>
 
-            <!--<div class="job">
+            <!--<div class="item">
                 <span class="title">Youth Science Teacher</span> - KAMSC Sizzlin’ Summer Science, Kalamazoo MI <span class="date">June 2008 – August 2011</span>
                 <ul>    
                     <li>Design and teach classes of 5-15 students in various topics in web design, programming, and basic mechanical design</li>
                 </ul>
             </div>-->
 
-            <!--<div class="job">
+            <!--<div class="item">
                 <span class="title">Ecological Systems Research Assistant</span> - Kalamazoo College, Kalamazoo MI <span class="date">December 2010 – June 2012</span>
                 <ul>
                     <li>Collaborate with biologist to program a simulation of dynamic habitat formation using NetLogo</li>
                 </ul>
             </div>-->
 
-            <!--<div class="job">
+            <!--<div class="item">
                 <span class="title">Campus Tour Guide</span> - Kalamazoo College, Kalamazoo MI <span class="date">March 2010 - March 2014</span>
                 <ul>
                     <li>Lead prospective students and families through an introduction to the Kalamazoo College campus and curriculum</li>
                 </ul>
             </div>-->
 
-            <!--<div class="job">
+            <!--<div class="item">
                 <span class="title">Leader of the LandSea Pre-Orientation Program</span> - Kalamazoo College, Kalamazoo MI <span class="date">August 2011</span>
                 <ul>
                     <li>Facilitating group cohesion and effective teamwork, lead incoming students through an 18 day backpacking and canoeing trip</li>
@@ -99,17 +143,21 @@
 
         <section id="projects">
             <h1>Projects and Publications</h1>
-            <span class="title">Japanese Vocabulary Extension for Google Chrome</span> (<a href="http://lphk92.github.io/JapaneseVocabExtension/">http://lphk92.github.io/JapaneseVocabExtension/</a>)
-            <ul>
-                <li>A Chrome extension that quizzes the user on a Japanese vocabulary word every time they open or close a tab, allowing users to manage their own lists and import/export list data</li>
-            </ul>
+            <div class="item">
+                <span class="title">Japanese Vocabulary Extension for Google Chrome</span> (<a href="http://lphk92.github.io/JapaneseVocabExtension/">http://lphk92.github.io/JapaneseVocabExtension/</a>)
+                <ul>
+                    <li>A Chrome extension that quizzes the user on a Japanese vocabulary word every time they open or close a tab, allowing users to manage their own lists and import/export list data</li>
+                </ul>
+            </div>
 
-            <span class="title">Lead Website Developer for Hardy Ink</span> (<a href="http://www.hardyink.com">http://www.hardyink.com</a>)</li>
-            <ul>
-                <li>A company website for a local writer and communications consultant</li>
-            </ul>
+            <div class="item">
+                <span class="title">Lead Website Developer for Hardy Ink</span> (<a href="http://www.hardyink.com">http://www.hardyink.com</a>)</li>
+                <ul>
+                    <li>A company website for a local writer and communications consultant</li>
+                </ul>
+            </div>
 
-            <span class="title">Coauthor</span>, <i>Using headspace solid phase microextraction to evaluate the odor compounds in trap grease feedstock for biodiesel, Biomass and Bioenergy, Volume 43, August 2012, Pages 36-41</i>
+            <!--<span class="title">Coauthor</span>, <i>Using headspace solid phase microextraction to evaluate the odor compounds in trap grease feedstock for biodiesel, Biomass and Bioenergy, Volume 43, August 2012, Pages 36-41</i>-->
         </section>
 
         <section id="skills">
