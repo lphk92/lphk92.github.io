@@ -1,0 +1,19 @@
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+    lg =   log --all --oneline --decorate --graph -20
+    lgc =  log --oneline --decorate --graph -20
+    lgx =  log --all --graph --format="%C(auto)%h\\ %cd%d\\ %s\\ %cn" --date=short -40
+    lgxc = log --graph --format:"%C(auto)%h\\ %C(blue)%cd%Creset%C(auto)%d\\ %s\\ %C(green)%cn" --date=short -40
+    ls =   log --format:"%C(auto)%h\\ %C(blue)%cd%Creset%C(auto)%d\\ %s\\ %C(green)%cn" --date=short --numstat -10
+    check = diff --check
+    amend = commit --amend
+[credential]
+	helper = cache
+[branch]
+    autosetuprebase = always
+[rerere]
+    enabled = true
+
