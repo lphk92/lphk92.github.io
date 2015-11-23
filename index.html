@@ -2,91 +2,35 @@
 <html>
     <head>
         <title>Lucas Penn Hardy Kushner</title>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="index.css" type="text/css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>
-            $(document).ready(function()
-            {
-                // Smooth scrolling
-                $('a[href*=#]:not([href=#])').click(function() 
-                {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
-                    {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        if (target.length)
-                        {
-                            $('html,body').animate({ scrollTop: target.offset().top - 60 }, 1000);
-                            return false;
-                        }
-                    }
-                });
-
-                $('div.examples img').mouseenter(function()
-                {
-                    $(this).animate({height: "300px", width: "300px", padding: "0px"}, 200, "linear");
-                });
-
-                $('div.examples img').mouseleave(function()
-                {
-                    $(this).animate({height: "280px", width: "280px", padding: "10px"}, 200, "linear");
-                });
-            });
-        </script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <h1>Lucas Kushner</h1>
-            <nav>
-                <ul>
-                    <a href="#dreams"><li>Home</li></a>
-                    <a href="#code"><li>Portfolio</li></a>
-                    <a href="#want"><li>Teaching</li></a>
-                    <li>Quote</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="dreams">
-            <h1>Where Dreams Come Alive</h1>
-            <p>
-            I believe the software is more than 1s and 0s. I believe that it is an artform, that the computer is an infinite canvas, where the only limit is your imagination. I'm here to help transform your vision onto the canvas.
-            </p>
-        </section>
-
-        <section id="code">
-            <hgroup>
-                <h1>I can code.</h1>
-                <h2>So you don't have to</h2>
-            </hgroup>
-        </section>
-
-        <section id="portfolio">
-            <div class="examples">
-                <a href="http://www.hardyink.com"><img src="img/hardyink.png"></a>
-                <a href="http://lphk92.github.io/FallsWebsite"><img src="img/falls.png"></a>
-                <img src="img/hardyink.png">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                        <span class="sr-only">Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img height="25px" src="img/monogram.png"></img>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Section 1</a></li>
+                        <li><a href="#">Section 2</a></li>
+                        <li><a href="#">Section 3</a></li>
+                        <li><a href="#">Section 4</a></li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </nav>
 
-        <section id="want">
-            <hgroup>
-                <h1>...but if you want to</h1>
-                <h2>I can help</h2>
-            <hgroup>
-        </section>
-        <section id="teaching">
-            <p>
-            My greatest passion has always been in sharing my love for programming and software development, and enabling others to bring their own ideas and imagination to life on the screen.
-            </p>
-            <p>
-            From middle school classrooms to aspiring self-starters, I can assist whomever you think needs to learn how to code!
-            </p>
-        </section>
-        <div id="center">
-            <div id="accordion">
-            </div>
+        <div id="main" class="container-fluid">
         </div>
     </body>
 </html>
