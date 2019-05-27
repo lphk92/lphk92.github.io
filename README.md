@@ -1,4 +1,5 @@
-lphk92.github.io
-================
+---
+permalink: /index.html
+---
 
 Homepage for Lucas Kushner
