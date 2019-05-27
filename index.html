@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Lucas Kushner</title>
-        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--<link href="static/bootstrap.min.css" rel="stylesheet">-->
          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
         p
@@ -36,11 +37,25 @@
         </style>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="col-sm-6 col-xs-12 vertical-center">
-                    <img class="col-xs-offset-1 col-xs-10" src="static/monogram.png">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Lucas Kushner</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Portfolio</a>
+                    <a class="nav-item nav-link" href="#">Resume</a>
+                </div>
             </div>
-            <div class="col-sm-6 col-xs-12 vertical-center">
+        </nav>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-sm-5 col-xs-10 vertical-center">
+                <img src="static/monogram.png">
+            </div>
+            <div class="col-sm-5 col-xs-10 vertical-center">
                 <div id="info">
                     <p>
                     I am a developer passionate about empowering individuals
@@ -61,6 +76,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
