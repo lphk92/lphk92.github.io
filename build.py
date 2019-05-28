@@ -4,12 +4,14 @@ import yaml
 from pathlib import Path
 
 template_dir = Path('templates')
+template_data_dir = template_dir / "data"
 template_env = j2.Environment(
     loader=j2.FileSystemLoader(str(template_dir))
 )
 
 
 def render(page_name, **kwargs):
+    kwargs["page"] = page_name
     raw_html = template_env.get_template(f'{page_name}.j2.html').render(**kwargs)
     target_dir = Path(f'{page_name}' if page_name != "index" else ".")
     target_dir.mkdir(parents=True, exist_ok=True)
@@ -17,7 +19,7 @@ def render(page_name, **kwargs):
 
 
 def main():
-    resume = yaml.safe_load((template_dir / 'resume.yaml').read_text())
+    resume = yaml.safe_load((template_data_dir / 'resume.yaml').read_text())
 
     render('index')
     render('resume', resume=resume)

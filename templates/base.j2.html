@@ -11,18 +11,6 @@
 
         {% block style %}
         <style>
-        p
-        {
-            font-size: 24px;
-            font-family: Monospace;
-            margin-bottom: 50px;
-        }
-        span
-        {
-            font-size: 24px;
-            font-family: Monospace;
-            display: block;
-        }
         .fa
         {
             font-size: 52px;
@@ -57,9 +45,9 @@
             </button>
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/">Home</a>
-                    <a class="nav-item nav-link" href="/portfolio">Portfolio</a>
-                    <a class="nav-item nav-link" href="/resume">Resume</a>
+                    <a class="nav-item nav-link {% if page == 'index' %} active {% endif %}" href="/">Home</a>
+                    <a class="nav-item nav-link {% if page == 'portfolio' %} active {% endif %}" href="/portfolio">Portfolio</a>
+                    <a class="nav-item nav-link {% if page == 'resume' %} active {% endif %}" href="/resume">Resume</a>
                 </div>
             </div>
         </nav>

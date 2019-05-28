@@ -18,10 +18,11 @@ education:
         - Graduated Summa Cum Laude
         - Phi Beta Kappa - Academic Honor Society for the Liberal Arts and Sciences
         - Heyl Scholar - Full Scholarship for excellence in Mathematics and Science
-        - 1 Year study abroad at the 国際教養学部,  Waseda University, Tokyo, Japan (September 2012 - July 2013)
+        - 1 Year study abroad at the School of International Liberal Studies,  Waseda University, Tokyo, Japan (September 2012 - July 2013)
 
 experience:
     - organization: Chicago Trading Company
+      show: true
       location: Chicago, IL
       start: July 2014
       end: Present
@@ -32,6 +33,7 @@ experience:
         - Designed multi-language code autogeneration framework using Clang Python bindings.
 
     - organization: Kalamazoo College
+      show: true
       location: Kalamazoo, MI
       start: September 2011
       end: June 2014
@@ -42,6 +44,7 @@ experience:
         - Instruct students during one-on-one tutoring for Computer Science, Mathematics and Physics
 
     - organization: Chicago Trading Company
+      show: false
       location: Chicago, IL
       start: July 2012
       end: August 2012
@@ -51,6 +54,7 @@ experience:
         - Created front-end Java Swing tool for monitoring network messages to and from applications.
 
     - organization: iyeTek
+      show: false
       location: Kalamazoo, MI
       start: August 2009
       end: April 2012
@@ -60,6 +64,7 @@ experience:
         - Communicated with third party clients to custom-tailor products
 
     - organization: KAMSC Sizzlin' Summer Science
+      show: false
       location: Kalamazoo, MI
       start: June 2008
       end: August 2011
@@ -68,6 +73,7 @@ experience:
         - Design and teach classes of 5-15 students in various topics in web design, programming, and basic mechanical design
 
     - organization: Kalamazoo College
+      show: false
       location: Kalamazoo, MI
       start: December 2010
       end: June 2012
@@ -76,6 +82,7 @@ experience:
         - Collaborate with biologist to program a simulation of dynamic habitat formation using NetLogo
 
     - organization: Kalamazoo College
+      show: false
       location: Kalamazoo, MI
       start: March 2010
       end: March 2014
@@ -84,6 +91,7 @@ experience:
         - Lead prospective students and families through an introduction to the Kalamazoo College campus and curriculum
 
     - organization: Kalamazoo College
+      show: false
       location: Kalamazoo, MI
       start: August 2011
       end: August 2011
@@ -116,39 +124,58 @@ publications:
 
     - title: Coauthor</span>, Using headspace solid phase microextraction to evaluate the odor compounds in trap grease feedstock for biodiesel, Biomass and Bioenergy, Volume 43, August 2012, Pages 36-41
 
-programming:
-    languages:
+skills:
+    Programming Languages:
         - name: Python
           level: 3
+          show: true
+
         - name: C++
           level: 2
+          show: true
+
         - name: HTML5
           level: 2
+          show: true
+
         - name: JavaScript
           level: 2
+          show: true
+
         - name: CSS
           level: 2
+          show: true
+
         - name: Java
           level: 1
+          show: true
 
-    libraries:
+    Libraries:
         - name: pandas
-          language: Python
+          show: true
+
         - name: Flask
-          language: Python
+          show: true
+
         - name: Tornado
-          language: Python
+          show: true
 
-    tools:
-        - Jupyter
-        - Linux
+    Tools:
+        - name: Jupyter
+          show: true
 
-languages:
-    - name: English
-      level: Fluent
+        - name: Linux
+          show: true
 
-    - name: Japanese
-      level: Conversational
+    Languages:
+        - name: English
+          show: true
+          level: Fluent
 
-    - name: Spanish
-      level: Intermediate
+        - name: Japanese
+          show: true
+          level: Conversational
+
+        - name: Spanish
+          show: true
+          level: Intermediate
