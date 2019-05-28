@@ -1,0 +1,154 @@
+﻿basics:
+    name: Lucas Kushner
+    address: 510 W Erie Unit 1508, Chicago IL 60654
+    phone: 269.364.8095
+    email: lphk92@gmail.com
+    summary: >
+        I am a highly motivated individual interested in various fields in
+        computer programming, technology, and science.
+        In pursuing these interests, I have gained experience working in different settings.
+
+education:
+    - institution: Kalamazoo College
+      degree: Bachelor of Arts in Computer Science and Physics
+      start: 2010
+      end: 2014
+      gpa: 4.0
+      honors:
+        - Graduated Summa Cum Laude
+        - Phi Beta Kappa - Academic Honor Society for the Liberal Arts and Sciences
+        - Heyl Scholar - Full Scholarship for excellence in Mathematics and Science
+        - 1 Year study abroad at the 国際教養学部,  Waseda University, Tokyo, Japan (September 2012 - July 2013)
+
+experience:
+    - organization: Chicago Trading Company
+      location: Chicago, IL
+      start: July 2014
+      end: Present
+      title: Software Engineer
+      points:
+        - Worked with the Valuation Infrastructure group to develop the software infrastructure necessary for theoretical stock options valuation, as well as APIs for interacting with valuation data on both Windows and Linux.
+        - Created inter-language function and data bindings between C++ and Python using Boost.Python libraries.
+        - Designed multi-language code autogeneration framework using Clang Python bindings.
+
+    - organization: Kalamazoo College
+      location: Kalamazoo, MI
+      start: September 2011
+      end: June 2014
+      title: Teaching Assistant
+      points:
+        - Guide students through assignments and laboratory exercises to develop understanding of concepts and applications of course material in both Computer Science and Physics
+        - Conducted full-class and small-group review sessions and lectures when needed
+        - Instruct students during one-on-one tutoring for Computer Science, Mathematics and Physics
+
+    - organization: Chicago Trading Company
+      location: Chicago, IL
+      start: July 2012
+      end: August 2012
+      title: Software Engineering Intern
+      points:
+        - Produced tools used for numerical analysis of stock options data alongside the Firmwide Valuation team.
+        - Created front-end Java Swing tool for monitoring network messages to and from applications.
+
+    - organization: iyeTek
+      location: Kalamazoo, MI
+      start: August 2009
+      end: April 2012
+      title: Software Developer
+      points:
+        - Developed front-end law enforcement software solutions using Microsoft Visual C#
+        - Communicated with third party clients to custom-tailor products
+
+    - organization: KAMSC Sizzlin' Summer Science
+      location: Kalamazoo, MI
+      start: June 2008
+      end: August 2011
+      title: Youth Science Teacher
+      points:
+        - Design and teach classes of 5-15 students in various topics in web design, programming, and basic mechanical design
+
+    - organization: Kalamazoo College
+      location: Kalamazoo, MI
+      start: December 2010
+      end: June 2012
+      title: Ecological Systems Research Assistant
+      points:
+        - Collaborate with biologist to program a simulation of dynamic habitat formation using NetLogo
+
+    - organization: Kalamazoo College
+      location: Kalamazoo, MI
+      start: March 2010
+      end: March 2014
+      title: Campus Tour Guide
+      points:
+        - Lead prospective students and families through an introduction to the Kalamazoo College campus and curriculum
+
+    - organization: Kalamazoo College
+      location: Kalamazoo, MI
+      start: August 2011
+      end: August 2011
+      title: Leader of the LandSea Pre-Orientation Program
+      points:
+        - Facilitating group cohesion and effective teamwork, lead incoming students through an 18 day backpacking and canoeing trip
+
+projects:
+    - title: Japanese Vocabulary Extension for Google Chrome
+      url: http://lphk92.github.io/JapaneseVocabExtension/
+      points:
+        - An open source Chrome extension that quizzes the user on a Japanese vocabulary word when a tab is opened or closed
+        - Allows users to manage their own lists and import/export list data
+
+    - title: Susan Fall Mediator Website
+      url: http://www.sfallmediator.com
+      points:
+        - Professional website for a local attorney and divorce mediator.
+
+    - title: Hardy Ink Website
+      url: http://www.hardyink.com
+      points:
+        - A company website for a local writer and communications consultant.
+
+publications:
+    - title: Record Locking Methods - Techniques for record locking in the system for Managing Academic Records and Transcripts
+      url: sip.pdf
+      points:
+        - Undergraduate Thesis on the design and development of record locking systems for multi-user web applications, using the open source System for Managing Academic Records and Transcripts as the central case study
+
+    - title: Coauthor</span>, Using headspace solid phase microextraction to evaluate the odor compounds in trap grease feedstock for biodiesel, Biomass and Bioenergy, Volume 43, August 2012, Pages 36-41
+
+programming:
+    languages:
+        - name: Python
+          level: 3
+        - name: C++
+          level: 2
+        - name: HTML5
+          level: 2
+        - name: JavaScript
+          level: 2
+        - name: CSS
+          level: 2
+        - name: Java
+          level: 1
+
+    libraries:
+        - name: pandas
+          language: Python
+        - name: Flask
+          language: Python
+        - name: Tornado
+          language: Python
+
+    tools:
+        - Jupyter
+        - Linux
+
+languages:
+    - name: English
+      level: Fluent
+
+    - name: Japanese
+      level: Conversational
+
+    - name: Spanish
+      level: Intermediate

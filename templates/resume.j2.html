@@ -1,0 +1,51 @@
+{% extends "base.j2.html" %}
+
+{% block style %}
+{{ super() }}
+<style>
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>{{ resume['basics']['name'] }}</h1>
+            <h3><small>{{ resume['basics']['email'] }} {{ resume['basics']['phone'] }}</small></h3>
+            <p>{{ resume['basics']['summary'] }}</p>
+
+
+            <h2>Experience</h2>
+            {% for experience in resume['experience'] %}
+            <h3>{{ experience['title'] }} <small>{{ experience['organization'] }} ({{ experience['location'] }})</small></h3>
+            <h4>{{ experience['start'] }} - {{ experience['end'] }}</h4>
+            <ul>
+                {% for point in experience['points'] %}
+                    <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+
+
+            <h2>Education</h2>
+            {% for education in resume['education'] %}
+            <h3>{{ education['institution'] }} <small>{{ education['start'] }} - {{ education['end'] }}</small></h3>
+            <h4>{{ education['degree'] }}</h4>
+            <p>
+                {% for honor in education['honors'] %}
+                {{ honor }}<br>
+                {% endfor %}
+            </p>
+            {% endfor %}
+
+            <h2>Skills</h2>
+            Languages: {% for lang in resume['programming']['languages'] %} {{ lang['name'] }} {% endfor %}
+            <br>
+            Libraries: {% for lib in resume['programming']['libraries'] %} {{ lib['name'] }} {% endfor %}
+            <br>
+            Tools: {% for tool in resume['programming']['tools'] %} {{ tool }} {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

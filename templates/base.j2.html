@@ -9,7 +9,7 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
               rel="stylesheet">
 
-        
+        {% block style %}
         <style>
         p
         {
@@ -41,7 +41,7 @@
             align-items: center;
         }
         </style>
-        
+        {% endblock %}
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,35 +63,8 @@
                 </div>
             </div>
         </nav>
-        
-<div class="container-fluid">
-    <div class="row">
-        <div class="offset-1 col-sm-5 col-xs-10 vertical-center">
-            <img src="static/monogram.png">
-        </div>
-        <div class="col-sm-5 col-xs-10 vertical-center">
-            <div id="info">
-                <p>
-                I am a developer passionate about empowering individuals
-                to innovate and create through well-designed and
-                OpenSource software.
-                </p>
-
-                <p>
-                I am a juggler and fire spinner who loves seeing the excitement of
-                teaching and learning soemthing new together.
-                </p>
-
-                <div id="contact">
-                <span>Call me!</span>
-                <a href="https://github.com/lphk92"<i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lucaskushner"<i class="fa fa-linkedin"></i></a>
-                <a href="mailto:lucas@kushner.dev"<i class="fa fa-envelope-o"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+        {% block content %}
+        <div class="container">You should probably but something good here...</div>
+        {% endblock %}
     </body>
 </html>
