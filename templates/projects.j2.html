@@ -1,0 +1,55 @@
+{% extends "base.j2.html" %}
+
+{% block style %}
+{{ super() }}
+<style>
+h1
+{
+    /*font-variant: small-caps;*/
+}
+.row
+{
+    height: 300px;
+}
+.sample
+{
+    padding: 30px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin: 20px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Monospace;
+}
+.sample:hover
+{
+    background-color: gray;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    {% set col_width = 12 // n_cols %}
+
+    <div class="row">
+    {% for project in projects %}
+        <div class="col-md-{{col_width}}">
+            <a href="{{project['url']}}">
+                <div class="sample">
+                    <h2>{{ project['title'] }}</h2>
+                    <p>{{ project['points'][0] }}</p>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

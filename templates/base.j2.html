@@ -20,33 +20,16 @@
         {
             text-decoration: none;
         }
-        .vertical-center
-        {
-            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-            min-height: 100vh; /* These two lines are counted as one :-)       */
-
-            display: flex;
-            align-items: center;
-        }
         </style>
         {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Lucas Kushner</a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <a class="navbar-brand" href="/">Lucas Kushner</a>
+            <div>
                 <div class="navbar-nav">
                     <a class="nav-item nav-link {% if page == 'index' %} active {% endif %}" href="/">Home</a>
-                    <a class="nav-item nav-link {% if page == 'portfolio' %} active {% endif %}" href="/portfolio">Portfolio</a>
+                    <a class="nav-item nav-link {% if page == 'projects' %} active {% endif %}" href="/projects">Projects</a>
                     <a class="nav-item nav-link {% if page == 'resume' %} active {% endif %}" href="/resume">Resume</a>
                 </div>
             </div>

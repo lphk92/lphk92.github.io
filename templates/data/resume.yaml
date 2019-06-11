@@ -100,10 +100,10 @@ experience:
         - Facilitating group cohesion and effective teamwork, lead incoming students through an 18 day backpacking and canoeing trip
 
 projects:
-    - title: Japanese Vocabulary Extension for Google Chrome
+    - title: Japanese Vocabulary Extension
       url: http://lphk92.github.io/JapaneseVocabExtension/
       points:
-        - An open source Chrome extension that quizzes the user on a Japanese vocabulary word when a tab is opened or closed
+        - An open source Chrome extension that quizzes a Japanese vocabulary word when a tab is opened or closed
         - Allows users to manage their own lists and import/export list data
 
     - title: Susan Fall Mediator Website

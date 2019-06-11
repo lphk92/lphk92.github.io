@@ -15,16 +15,30 @@ span
     font-family: Monospace;
     display: block;
 }
+
+.vertical-center
+{
+    min-height: 90%; /* Fallback for old browser that don't support vh unit */
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+}
+.other-center
+{
+    display: flex;
+    align-items: center;
+}
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="offset-1 col-sm-5 col-xs-10 vertical-center">
-            <img src="static/monogram.png">
+        <div class="vertical-center offset-md-1 col-md-5 offset-sm-3 col-sm-6">
+            <img class="img-fluid" src="static/monogram.png">
         </div>
-        <div class="col-sm-5 col-xs-10 vertical-center">
+        <div class="vertical-center col-md-5 col-sm-12">
             <div id="info">
                 <p>
                 I am a developer passionate about empowering individuals
@@ -39,9 +53,9 @@ span
 
                 <div id="contact">
                 <span>Call me!</span>
-                <a href="https://github.com/lphk92"<i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lucaskushner"<i class="fa fa-linkedin"></i></a>
-                <a href="mailto:lucas@kushner.dev"<i class="fa fa-envelope-o"></i></a>
+                <a href="https://github.com/lphk92"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucaskushner"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:lucas@kushner.dev"><i class="fa fa-envelope-o"></i></a>
                 </div>
             </div>
         </div>

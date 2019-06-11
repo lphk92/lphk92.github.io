@@ -21,14 +21,6 @@
         {
             text-decoration: none;
         }
-        .vertical-center
-        {
-            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-            min-height: 100vh; /* These two lines are counted as one :-)       */
-
-            display: flex;
-            align-items: center;
-        }
         </style>
         
 <style>
@@ -44,25 +36,30 @@ span
     font-family: Monospace;
     display: block;
 }
+
+.vertical-center
+{
+    min-height: 90%; /* Fallback for old browser that don't support vh unit */
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+}
+.other-center
+{
+    display: flex;
+    align-items: center;
+}
 </style>
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Lucas Kushner</a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <a class="navbar-brand" href="/">Lucas Kushner</a>
+            <div>
                 <div class="navbar-nav">
                     <a class="nav-item nav-link  active " href="/">Home</a>
-                    <a class="nav-item nav-link " href="/portfolio">Portfolio</a>
+                    <a class="nav-item nav-link " href="/projects">Projects</a>
                     <a class="nav-item nav-link " href="/resume">Resume</a>
                 </div>
             </div>
@@ -70,10 +67,10 @@ span
         
 <div class="container-fluid">
     <div class="row">
-        <div class="offset-1 col-sm-5 col-xs-10 vertical-center">
-            <img src="static/monogram.png">
+        <div class="vertical-center offset-md-1 col-md-5 offset-sm-3 col-sm-6">
+            <img class="img-fluid" src="static/monogram.png">
         </div>
-        <div class="col-sm-5 col-xs-10 vertical-center">
+        <div class="vertical-center col-md-5 col-sm-12">
             <div id="info">
                 <p>
                 I am a developer passionate about empowering individuals
@@ -88,9 +85,9 @@ span
 
                 <div id="contact">
                 <span>Call me!</span>
-                <a href="https://github.com/lphk92"<i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lucaskushner"<i class="fa fa-linkedin"></i></a>
-                <a href="mailto:lucas@kushner.dev"<i class="fa fa-envelope-o"></i></a>
+                <a href="https://github.com/lphk92"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucaskushner"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:lucas@kushner.dev"><i class="fa fa-envelope-o"></i></a>
                 </div>
             </div>
         </div>

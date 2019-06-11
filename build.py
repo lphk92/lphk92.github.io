@@ -21,8 +21,16 @@ def render(page_name, **kwargs):
 def main():
     resume = yaml.safe_load((template_data_dir / 'resume.yaml').read_text())
 
+    print("Rendering index...")
     render('index')
+
+    print("Rendering resume...")
     render('resume', resume=resume)
+
+    print("Rendering projects...")
+    render('projects', projects=resume["projects"], n_cols=2)
+
+    print("Done!")
 
 
 if __name__ == "__main__":
