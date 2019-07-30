@@ -1,4 +1,4 @@
-﻿basics:
+basics:
     name: Lucas Kushner
     address: 510 W Erie Unit 1508, Chicago IL 60654
     phone: 269.364.8095
@@ -114,7 +114,7 @@ projects:
     - title: Hardy Ink Website
       url: http://www.hardyink.com
       points:
-        - A company website for a local writer and communications consultant.
+        -  Digital business card for a writer and communications consultant
 
 publications:
     - title: Record Locking Methods - Techniques for record locking in the system for Managing Academic Records and Transcripts
